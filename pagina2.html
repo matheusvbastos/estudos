@@ -1,15 +1,70 @@
 <doctype html>
 <html>   
 
-    <head> <title>Estudos sobre HTML </title> 
+    <head> <title>Estudos sobre Programação </title> 
 
-        <h1> Anotações sobre HTML parte 2</h1>
+        <h1> Anotações sobre HTML</h1>
 
-        <a href="index.html"> Home </a>  -  <a href="pagina2.html">Página 2</a>  -  
-        <a href="pagina3.html">Página 3</a>       
+        <a href="index.html"> Home </a>  -  <a href="pagina2.html">Estudos sobre HTML</a>  -   
     </head> 
     
     <body>
+        <p>Comecei a aprender a programar por um aplicativo chamado <strong>Mimo</strong>.
+            <br>Ele me <em>facilitou</em> muito a entender <strong>HTML</strong>.
+    
+            <p>Irei começar a fazer minhas anotações e estudos por aqui.</p>
+    
+            <h3>Html Básico</h3>
+    
+            <p> <strong>Tags Html:</strong>
+            <br> " < tag > " aberta
+            <br> " < / tag > " fechada
+            <br> Para cada tag sempre deve abrir e fechar.</p>
+    
+            <p> <strong>Alguns Elementos</strong>:
+    
+            <br> <strong>p</strong>: Parágrafo 
+            <br> <strong>h1</strong>(maior) ao <strong>h6</strong>(menor): Cabeçalhos
+            <br> <strong>br</strong>: Quebra de Linha (Essa tag não precisa fechar)
+            <br> <strong><em>em</em></strong>: Itálico
+            <br> <strong>strong</strong>: Negrito
+    
+            <p> Existe também a tag <strong>"Button"</strong> que por sua vez cria um botão.</p>
+            <p><a href="https://youtube.com.br" ><button>Não Aperte</button> </a></p>
+    
+            <p> Para criar um link <em>começamos</em> sempre com a <strong>âncora</strong> 
+            <br> "< a texto < / a >" 
+    
+            <p> Para vincular uma página da web preciso adicionar o <strong>href=" URL "</strong> 
+            <br> <strong>href</strong> siginifica <strong><em>referência de hipertexto</em></strong>
+    
+            <p> A junção da <strong>âncora</strong> com <strong>href=" URL "</strong> cria um hiperlink para qualquer 
+            página desejada da web
+    
+            <p><strong>Exemplo </strong> <a href="https://google.com.br">Acesse o google</a>
+    
+            <h3>Html Intermediário</h3>
+    
+            <p> Como colocar uma imagem.</p>
+    
+            <p> <strong> < img > </strong> (Assim como o < br >, também a tag não precisa fechar)</p>
+    
+            <p> Para adicionar uma imagem precisamos do atributo <strong>src=" URL.png " </strong></p>
+    
+            <p> Também pode se utilizar atributos para aumentar o tamanho das imagens, isso utilizando por pixel.</p>
+    
+            <p> Largura: (= Width " 100 ") & Altura: (=Height " 100 " )</p>
+    
+            <p> < img src = " url de uma imagem aqui " 
+            <br>Ajustar o tamanho: width =" 100 " height =" 100 " > </p>
+    
+            <p> <img src="https://getmimo.com/r/earth.png" width ="100" height ="100"  > </p>
+    
+            <p><strong>Como adicionar uma imagem pelo computador local:</strong> </p>
+    
+            < img src ="diretorio da pasta com a imagem aqui" >
+            <p><img src="C:\Users\mathe\OneDrive\MeuSite\img\mato.jpg" width="100" height="100"> </p>
+
         <p> Aqui estamos nós, na parte 2 desse estudo, agora utilizando o <br><strong>Visual Studio Code</strong></p>
 
         <p><img src="C:\Users\mathe\OneDrive\MeuSite\img\visuallogo.png" width="80" height="80"></p>
@@ -98,6 +153,83 @@
                 </ul>
             </li>
         </ul>
+       
+        <h3>Criando um formulário.</h3>
+
+        <p>Um elemento de <strong>form</strong> com diferentes elementos de <strong>input</strong> e um botão de <strong>envio</strong> 
+        <br>dentro compõe a estrutura do <strong>formulário</strong>.
+        <br><strong>Exemplo</strong></p>
+
+        <form>
+
+            Usuário: <input type="text"> <br>
+            Senha:   <input type="password"> <br> 
+            <button>Logar</button>
+
+        </form>
+
+        <p> Tag: <strong>fieldset</strong> para agrupar entradas relacionadas. Ele vai exibir uma borda entre tudo.<br> 
+            Tag: <strong>legend</strong> dentro do elemento <strong>fieldset</strong> cria uma legenda nela.<br>
+            Tag: <strong>label</strong> tal controle é chamado o <strong>controle etiquetado</strong> do elemento etiqueta. <br>
+            Tag: <strong>for</strong> e <strong>id</strong> devem ser correspondidas. Logo for é dentro do label e id é dentro do input.
+            <br><strong>Exemplo:</strong> 
+    
+        </p>
+        
+     <form>
+        <fieldset> 
+            <legend>Registre sua conta</legend>
+            
+            <label for="Nome:"> Nome: </label>
+            <input id="Nome" type="text" placeholder="Nome"> <br>
+            <label for="Senha"> Senha </label>
+            <input type="password" placeholder="Senha"> <br> 
+
+            <button>Logar</button>
+            
+        </fieldset>
+    </form> 
+   
+        <h3>Html Semântico</h3>
+
+        <p>Novas tags para organização de textos no html.</p>
+        <p> Tag data ou hora: <strong>time</strong> <br>
+            Tag endereço: <strong>address</strong>  <br>
+            Tag para abreviação ou sigla: <strong>abbr</strong> <br>
+            
+            <p>Exemplo de como colocar um link em uma imagem:<br>
+               Acesse o twitter do Mimo: </p> 
+            <a href="https://twitter.com/getmimo"> <img src="https://mimo.app/i/twitter.png"></a> 
+        
+        <h3>Elementos semânticos que podem definir a estrutura de uma página Web</h3>
+
+        <p> Tag <strong>header</strong>: para parte superior da página. <br>
+            Tag <strong>footer</strong>: para parte inferior da página. <br>
+            Tag <strong>main</strong>: define o conteúdo específico de uma determinada pág da web. <br>
+            Tag <strong>section</strong>: define grupos de conteúdos de um único tema. <br>
+            Tag <strong>nav</strong>: define grupo de elementos que ajudam os usuários a sair da página atual, como por exemplo uma lista de mídias sociais. <br>
+            
+        </p>
+         
+        <h3>Elementos que mudam a aparência</h3>
+
+        Tag <strong>details</strong>: usado como uma ferramenta de onde o usuário irá obter informações adicionais. <br>
+        Tag <strong>summary</strong>: é utilizado como um sumário ou legenda para o conteúdo de um elemento <strong>details</strong>. <br>
+        Tag <strong>figure e figcaption</strong>: O elemento <strong>figure<strong> HTML representa conteúdo autocontido, potencialmente com uma legenda opcional, 
+        que é especificada usando o <strong>figcaption</strong> elemento. 
+        
+        <p>Por exemplo:</p>
+      <details> <summary>Tempo</summary> o que é tempo? </details> 
+            
+      <h1>Github e Git</h1>
+      <p>Agora eu aprendi como utilizar o básico do github utilizando o git vendo um vídeo <a href="https://www.youtube.com/watch?v=_hZf1teRFNg">nesse link</a> </p>
+            <p>Consegui sincronizar o git do meu pc de casa com o pc lá da escola. Estou estudando nos horários vagos e logo após chegar do trabalho depois de um lanche. 
+            Estou contente com essa nova rotina de estudo de programação, espero que eu consiga aprender de fato tudo isso.</p>
+
+        <h2>Curso em Vídeo </h2>
+                    
+        <p>A partir daqui irei seguir com o curso em vídeo do Gustavo Guanabara. <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Nessa Playlist</a></p>
+        <p>Mais ainda sim continuarei fazendo os exercicios do aplicativo <strong>Mimo </strong></p>
 
     </body>
 </html>
