@@ -132,14 +132,18 @@
             <br><strong>< u l > < / u ></strong> Para Lista <strong>não</strong> Ordenada 
             <br><strong>< l i > < / l i ></strong> Para adicionar um Item na Lista </p>
 
+            
             <ol><li>Criando uma lista ordenada</li></ol>
-            <ol>
-                 <li>Primeiro da Lista</li>
-                 <li>Segundo da Lista</li>
-                 <li>Terceiro da Lista</li>
+            <p>Atributo: <code>type=""</code> para escolher entre 1, A, a, I ou i</p>
+
+            <ol  >
+                 <li>Primeiro da Lista
+                 <li>Segundo da Lista
+                 <li>Terceiro da Lista
             </ol>
 
             <ul><li>Criando uma lista não ordenada</li></ul>
+            <p>Atributo: <code>type=""</code> para escolher entre, disc, cicle e square</p>
             <ul>
                  <li>Nessa lista</li>
                  <li>É feita com</li>
@@ -342,15 +346,37 @@
                 Tag <strong>sub</strong> para texto do tipo H<sub>2</sub>O (Para embaixo)
             </p>
 
-            <p>Tag <strong>code</strong> para mostrar um trecho de um código. Por exemplo: <br>
-                <code>
-                    h1 {
-                        font-family:Arial; <br>
-                        font-size:20pt; <br>
-                        color:blue; <br>
-                           }
-                </code>
+            <p>Tag <strong>code</strong> para mostrar um trecho de um código. Deixar monoespaçado, cada caracter com o mesmo espaço Por exemplo: <br>
+                <code> h1 {font-family:Arial; font-size:20pt; color:blue;} </code>
             </p>
+            Tag <strong>pre</strong> pode deixar a formatação do code de forma adequada escrita. Por exemplo:
+       
+            <pre>
+                <code>
+    h1 {
+        font-family:Arial;
+        font-size:20pt;
+        color:blue;
+    }
+                </code>
+            </pre>
+
+            <p> <strong>obs.:</strong> Shift + tab: selecionando o codigo faz ele ir para esquerda</p>
+
+            <p>Tag <strong>q</strong> quote: para citações. <br>
+            Como disse uma pessoa sábia um dia: <q>sei que nada sei</q> </p>
+
+            <p>Tag <strong>blockquote</strong> para citações longas e com referência de onde foi tirada através do atributo <strong>cite=""</strong>. Exemplo </p>
+
+            <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=0" > Fundamentos de HTML5 e CSS3 tem o objetivo de fornecer aos iniciantes e estudantes da área de desenvolvimento web conceitos básicos e fundamentos da marcação HTML e estilização CSS, para a criação de sites, interfaces gráficas e aplicações para a web.
+            </blockquote>
+
+            <p>Tag <strong>abbr</strong> junto com o atributo <strong>title</strong> pode mostrar com o cursor do mouse a abrevição dada. Exemplo: </p>
+
+            <p>Estou estudando<abbr title="HyperText Markup Language"> HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Quero um futuro melhor!</p>
+
+            <p>Tag <strong>bdo</strong> com o atributo <code>dir="rtl"</code> para textos invertidos. Exemplo: <br>
+            <bdo dir="rtl">esse texto ta invertido?</bdo></p>
 
     </body>
 </html>
