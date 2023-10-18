@@ -25,9 +25,7 @@
             <br> " < tag > " aberta
             <br> " < / tag > " fechada
             <br> Para cada tag sempre deve abrir e fechar.</p>
-
             
-    
             <p> <strong>Alguns Elementos</strong>:
     
             <br> <strong>p</strong>: Parágrafo 
@@ -38,21 +36,8 @@
     
             <p> Existe também a tag <strong>"Button"</strong> que por sua vez cria um botão.</p>
             <p><a href="https://youtube.com.br" ><button>Não Aperte</button> </a></p>
-    
-            <p> Para criar um link <em>começamos</em> sempre com a <strong>âncora</strong> 
-            <br> "< a texto < / a >" 
-    
-            <p> Para vincular uma página da web preciso adicionar o <strong>href=" URL "</strong> 
-            <br> <strong>href</strong> siginifica <strong><em>referência de hipertexto</em></strong>
-    
-            <p> A junção da <strong>âncora</strong> com <strong>href=" URL "</strong> cria um hiperlink para qualquer 
-            página desejada da web
-    
-            <p><strong>Exemplo </strong> <a href="https://google.com.br">Acesse o google</a>
-    
-            <h2>Html Intermediário</h2>
-    
-            <p> Como colocar uma imagem.</p>
+            
+            <h2> Como colocar uma imagem.</h2>
     
             <p> <strong> < img > </strong> (Assim como o < br >, também a tag não precisa fechar)</p>
     
@@ -67,36 +52,62 @@
     
             <p> <img src="https://getmimo.com/r/earth.png" width ="100" height ="100"  > </p>
     
-            <h2>Como adicionar uma imagem pelo computador local:</h2>
+            <strong>Como adicionar uma imagem pelo computador local:</strong> <br>
     
             < img src ="diretorio da pasta com a imagem aqui" >
             <p><img src="img/mato.jpg" width="100" height="100"> </p>
 
-        <p> Aqui estamos nós, na parte 2 desse estudo, agora utilizando o <br><strong>Visual Studio Code</strong></p>
+            <h2>Criando Links externos</h2>
 
-        <p><img src="img/visuallogo.png" width="80" height="80"></p>
+            <p> Para criar um link começamos sempre com a <strong>âncora</strong>: <code>a</code> 
+    
+            <p> Para vincular uma página da web preciso adicionar o <strong>href=" URL "</strong> 
+            <br> <strong>href</strong> siginifica <strong><em>referência de hipertexto</em></strong>
+    
+            <p> A junção da <strong>âncora</strong> com <strong>href=" URL "</strong> cria um hiperlink para qualquer página desejada da web
 
-        <p>Agora vamos aprender novas tags.</p>
+            <p>Atributos: <br>
+            <code>target="blank"</code> para criar uma página em branco e acessar o devido site <br>
+            <code>rel="external"</code> indicar que o site é outro, não o seu. <br>
+            <code>rel="nofollow"</code> informa ao navegador que você não dá aval à página
+        </p>
+    
+            <strong>Exemplo </strong> <a href="https://google.com.br" target="_external" rel="external"  >Acesse o google</a>
+    
+            <h2>Criando Links interno</h2>
+
+             indo para <a href="" target="_self" rel="prev"   >Home</a> do meu site  <br>
+            
+             <p>Atributos</p>
+             <p> <code>rel="prev"</code> para indicar o navegador que é a página anterior do meu site <br>
+            <code>rel="next"</code> indicar que é a página seguinte do site
+            <code>target="_self"</code> indicar que está no meu site.</p>
+
+            <h3>IMPORTANTE:</h3>  
+            <p><code>../</code> para voltar pastas dentro do site <br> <code>./</code> entrar nas pastas do site. Recurso para aprender do Linux <br>
+
+            Link para <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV">estudar linux</a></p>
+
+            <p><em>dica: utilizando o <code>/</code> também da pra acessar qualquer página, isso pelo visual studio</em></p>
+
+        <h1>Html Intermediário</h1>
         
-        <h2>Tag: < input > </h2>
+        <strong>Tag: <code>< input ></code> </strong> <br>
 
         A tag input cria uma caixa de inserir qualquer coisa.
-        <strong>Exemplo:</strong>
-        <h3>Escreva seu nome</h3>
+        <strong>Exemplo:</strong> <br>
+        <strong>Escreva seu nome</strong> <br>
         <input>
-
-        <h2>Tag: < input placeholder = "" > </h2>
         
-        <p>A a tag <strong>placeholder</strong>> faz que dentro da caixa de do <strong>input</strong>>fique o nome com opacidade baixa,
-        <br>esteticamente fica mais bonito.</p><strong>Exemplo:</strong>
-
-        <h2>Login:</h2>
+        <p><strong>Tag:<code> < input placeholder = "" ></code> </strong> <br>
+        
+        O atributo <strong>placeholder</strong> faz que dentro do <strong>input</strong> fique o nome com opacidade baixa, esteticamente fica mais bonito.</p><strong>Exemplo:</strong> <br>
 
         <input placeholder="Email"><br>
         <input placeholder="Password"> 
  
             <p>É sempre bom definir o <strong>type do seu input</strong>.</p>
-            <br><strong>Alguns dos "types":</strong>
+            <strong>Alguns dos "types":</strong>
             <p>Texto:</p>
             <input type="text"> 
             
