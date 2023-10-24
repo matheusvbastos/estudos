@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anotações sobre HTML</title>
+        <title>Estudos sobre HTML</title>
         <link rel="shortcut icon" href="logo-mbd.ico" type="image/x-icon"> <!--Colocando ícone no site-->
         <style> mark { background-color: aqua;
 
@@ -13,13 +13,6 @@
         <h1> Estudos sobre HTML</h1>
  
         <a href="index.html"> Home </a>  -  <a href="html-estudo.html">Estudos sobre HTML</a> - <a href="github-estudo.html">Estudos sobre GitHub</a> 
-
-        <p>Comecei a aprender a programar por um aplicativo chamado <strong>Mimo</strong>.
-            <br>Ele me <em>facilitou</em> muito a entender <strong>HTML</strong>.
-    
-            <p>Irei começar a fazer minhas anotações e estudos por aqui.</p>
-
-            <h1>Curso em Vídeo </h1>
        
             <p>Curso em vídeo do Gustavo Guanabara. <br> 
             <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Nessa Playlist</a></p>
@@ -93,7 +86,7 @@
             <p>
            <a href="https://emojipedia.org/">Emojipedia</a> <br>
            A regra é detectar os codepoint do emoji: <strong>&#x(inseri o codigo do emoji depois do "+");</strong>. 
-               Por exemplo: &#x1F913
+               Por exemplo: &#x1F929
            </p>
             
            <img src="" alt="logo da html 5"><br>Alt serve para acessebilidade para imagem
@@ -139,6 +132,23 @@
     
             < img src ="diretorio da pasta com a imagem aqui" >
             <p><img src="img/mato.jpg" width="100" height="100"> </p>
+
+            <h2>Imagens Dinâmicas</h2>
+             <p>Tag <code>picture</code> junto com a tag <code>source media srcset type</code> pode manipular os tamanhos das imagens de acordo com o dispositivo de tela usado. Isso é importante para o UX (experciência do Usuário) </p>
+
+             <p>a ordem da <code>source</code> faz todo sentido de como vai ser trocada a imagem, <strong>sempre deve ser do menor para o maior.</strong></p>
+
+             <strong>Exemplo: de acordo com o tamnho da tela, ela muda de tamanho.</strong>
+            <picture> 
+                
+            <source media="(max-width: 750px )" srcset="img-pmg/foto-p.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="img-pmg/foto-m.png" type="image/png">
+            <img src="img-pmg/foto-g.png" alt=""> 
+
+            </picture>
+
+            <p>Código usado:</p>
+            <img src="img/imagem-dinamica.jpg" alt="">
 
             <h2>Criando Links externos</h2>
 
