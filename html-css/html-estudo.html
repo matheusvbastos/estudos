@@ -150,6 +150,25 @@
             <p>Código usado:</p>
             <img src="img/imagem-dinamica.jpg" alt="">
 
+            <h2>Inserindo videos localmente</h2>
+
+            <p>Este vídeo está hospedado no meu servidor</p>
+
+            <video width="350" poster="img/dna-thumb.png" controls autoplay>
+                <source src="arquivos/Video-1080P.webm" type="video/webm">
+                <source src="arquivos/video-1080p.mp4" type="video/mp4">
+                <source src="arquivos/video-1080p.ogv" type="video/ogv">
+                <p>seu navegador não tem compatibilidade</p>
+            </video> 
+
+            <p><strong>Observações:</strong> <br>
+            A ordem da <code>source</code>tem total importância, ele tenta carregar sempre do primeiro até o último e carregar o compativel com o navegador do usuário</p>
+            <p>Atributos da tag <code>video</code>:</p>
+            <code>width</code> indica o tamanho que vai exibir na tela  <br>
+            <code>poster</code> indica a thumb do vídeo, enquanto o visitante não der play no video. <br>
+            <code>controls</code> vai configurar se os controles vão aparecer na parte inferior do video. por padrão os controles não aparecem <br>
+            <code>autoplay</code> indica se o navegador irá começar a rodar o vídeo assim que a página carregar 
+
             <h2>Criando Links externos</h2>
 
             <p> Para criar um link começamos sempre com a <strong>âncora</strong>: <code>a</code> 
