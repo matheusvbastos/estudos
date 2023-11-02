@@ -1,15 +1,19 @@
 @charset "UTF-8";
 
 body {
-    background-color: lightblue;
-    font-family: poppins
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 h1 {
-    color: blue;
+    color: hsl(58, 100%, 66%) ;
+    background-color: #1d2011;
 }
 h2 {
-    color: darkred;
+    color: hsl(58, 100%, 77%);
+    background-color: #1d2011;
 }
-p{
-    text-align: justify;
+
+a{
+    color: hsl(48, 100%, 50%);
+    background-color: #fff95219;
 }
