@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Estudos sobre HTML</title>
         <link rel="shortcut icon" href="logo-mbd.ico" type="image/x-icon"> <!--Colocando ícone no site-->
+        <link rel="stylesheet" href="style.css"> 
     
     </head>
     <body>
@@ -212,53 +213,8 @@
 
             <p><em>dica: utilizando o <code>/</code> também da pra acessar qualquer página, isso pelo visual studio</em></p>
 
-        <h1>Html Intermediário</h1>
-        
-            <strong>Tag: <code>< input ></code> </strong> <br>
-
-            A tag input cria uma caixa de inserir qualquer coisa.
-            <strong>Exemplo:</strong> <br>
-            <strong>Escreva seu nome</strong> <br>
-            <input>
+       
             
-            <p><strong>Tag:<code> < input placeholder = "" ></code> </strong> <br>
-            
-            O atributo <strong>placeholder</strong> faz que dentro do <strong>input</strong> fique o nome com opacidade baixa, esteticamente fica mais bonito.</p><strong>Exemplo:</strong> <br>
-
-            <input placeholder="Email"><br>
-            <input placeholder="Password"> 
- 
-            <p>É sempre bom definir o <strong>type do seu input</strong>.</p>
-            <strong>Alguns dos "types":</strong>
-            <p>Texto:</p>
-            <input type="text"> 
-            
-            <p>Password:</p> 
-            <input type="password">
-            
-            <p>Range:</p>
-            <input type="range">
-            
-            <p>Checkbox:</p>
-            <input type="checkbox">
-            
-            <p>Date:</p>
-            <input type="date">
-            
-            <p>Color:</p>
-            <input type="color">
-            
-            <br><strong>Exemplo:</strong>
-            </p>
-
-        <h2>Login:</h2>
-            <input type="text" placeholder="Email">
-            <br> <input type="password" placeholder="Senha">
-
-        <h2>Tag: DIV</h2> 
-            <p>< div > < / div ></p>
-            <p>Utilizado para criar uma divisão dos Elementos, como se fosse organizar por uma pasta, você separa ela de todo resto do corpo.<br>
-            Somente visivel na estrutura do html.</p>
             
         <h2>Tag para Listas</h2>
             <p> <strong>< ol > < / ol ></strong> Para Lista Ordenada 
@@ -336,42 +292,6 @@
                 <figure><img src="img/media-types.jpg" alt="media-types"></figure>
             </figcaption>
        
-        <h2>Criando um formulário.</h2>
-
-            <p>Um elemento de <strong>form</strong> com diferentes elementos de <strong>input</strong> e um botão de <strong>envio</strong> 
-            <br>dentro compõe a estrutura do <strong>formulário</strong>.
-            <br><strong>Exemplo</strong></p>
-
-            <form>
-
-                Usuário: <input type="text"> <br>
-                Senha:   <input type="password"> <br> 
-                <button>Logar</button>
-
-            </form>
-
-            <p> Tag: <strong>fieldset</strong> para agrupar entradas relacionadas. Ele vai exibir uma borda entre tudo.<br> 
-                Tag: <strong>legend</strong> dentro do elemento <strong>fieldset</strong> cria uma legenda nela.<br>
-                Tag: <strong>label</strong> tal controle é chamado o <strong>controle etiquetado</strong> do elemento etiqueta. <br>
-                Tag: <strong>for</strong> e <strong>id</strong> devem ser correspondidas. Logo for é dentro do label e id é dentro do input.
-                <br><strong>Exemplo:</strong> 
-                
-                    </p>
-                    
-                <form>
-                    <fieldset> 
-                        <legend>Registre sua conta</legend>
-                        
-                        <label for="Nome:"> Nome: </label>
-                        <input id="Nome" type="text" placeholder="Nome"> <br>
-                        <label for="Senha"> Senha </label>
-                        <input type="password" placeholder="Senha"> <br> 
-
-                        <button>Logar</button>
-                        
-                    </fieldset>
-                </form> 
-   
         <h2>Html Semântico</h2>
 
             <p>Novas tags para organização de textos no html.</p>
@@ -382,15 +302,6 @@
                 <p>Exemplo de como colocar um link em uma imagem:<br>
                 Acesse o twitter do Mimo: </p> 
                 <a href="https://twitter.com/getmimo"> <img src="https://mimo.app/i/twitter.png"></a> 
-            
-        <h3>Elementos semânticos que podem definir a estrutura de uma página Web</h3>
-
-            <p> Tag <strong>header</strong>: para parte superior da página. <br>
-                Tag <strong>footer</strong>: para parte inferior da página. <br>
-                Tag <strong>main</strong>: define o conteúdo específico de uma determinada pág da web. <br>
-                Tag <strong>section</strong>: define grupos de conteúdos de um único tema. <br>
-                Tag <strong>nav</strong>: define grupo de elementos que ajudam os usuários a sair da página atual, como por exemplo uma lista de mídias sociais. <br> 
-            </p>
             
         <h2>Elementos que mudam a aparência</h2>
             <p> Tag <strong>details</strong>: usado como uma ferramenta de onde o usuário irá obter informações adicionais. <br>
@@ -461,6 +372,99 @@
 
             <p>Tag <strong>bdo</strong> com o atributo <code>dir="rtl"</code> para textos invertidos. Exemplo: <br>
             <bdo dir="rtl">esse texto ta invertido?</bdo></p>
+        
+        <h1>Html Intermediário</h1>
+
+        <strong>Tag: <code>< input ></code> </strong> <br>
+
+            A tag input cria uma caixa de inserir qualquer coisa.
+            <strong>Exemplo:</strong> <br>
+            <strong>Escreva seu nome</strong> <br>
+            <input>
+            
+            <p><strong>Tag:<code> < input placeholder = "" ></code> </strong> <br>
+            
+            O atributo <strong>placeholder</strong> faz que dentro do <strong>input</strong> fique o nome com opacidade baixa, esteticamente fica mais bonito.</p><strong>Exemplo:</strong> <br>
+
+            <input placeholder="Email"><br>
+            <input placeholder="Password"> 
+ 
+            <p>É sempre bom definir o <strong>type do seu input</strong>.</p>
+            <strong>Alguns dos "types":</strong>
+            <p>Texto:</p>
+            <input type="text"> 
+            
+            <p>Password:</p> 
+            <input type="password">
+            
+            <p>Range:</p>
+            <input type="range">
+            
+            <p>Checkbox:</p>
+            <input type="checkbox">
+            
+            <p>Date:</p>
+            <input type="date">
+            
+            <p>Color:</p>
+            <input type="color">
+            
+            <br><strong>Exemplo:</strong>
+            </p>
+
+        <strong><p>Login:</p></strong>
+            <input type="text" placeholder="Email">
+            <br> <input type="password" placeholder="Senha">
+
+        <p><strong>Tag <code>div</code>:</strong></p>
+            <p>Utilizado para criar uma divisão dos Elementos, como se fosse organizar por uma pasta, você separa ela de todo resto do corpo.<br>
+            Somente visivel na estrutura do html.</p>
+
+        <h2>Criando um formulário.</h2>
+
+            <p>Um elemento de <strong>form</strong> com diferentes elementos de <strong>input</strong> e um botão de <strong>envio</strong> 
+            <br>dentro compõe a estrutura do <strong>formulário</strong>.
+            <br><strong>Exemplo</strong></p>
+
+            <form>
+
+                Usuário: <input type="text"> <br>
+                Senha:   <input type="password"> <br> 
+                <button>Logar</button>
+
+            </form>
+
+            <p> Tag: <strong>fieldset</strong> para agrupar entradas relacionadas. Ele vai exibir uma borda entre tudo.<br> 
+                Tag: <strong>legend</strong> dentro do elemento <strong>fieldset</strong> cria uma legenda nela.<br>
+                Tag: <strong>label</strong> tal controle é chamado o <strong>controle etiquetado</strong> do elemento etiqueta. <br>
+                Tag: <strong>for</strong> e <strong>id</strong> devem ser correspondidas. Logo for é dentro do label e id é dentro do input.
+                <br><strong>Exemplo:</strong> 
+                
+                    </p>
+                    
+                <form>
+                    <fieldset> 
+                        <legend>Registre sua conta</legend>
+                        
+                        <label for="Nome:"> Nome: </label>
+                        <input id="Nome" type="text" placeholder="Nome"> <br>
+                        <label for="Senha"> Senha </label>
+                        <input type="password" placeholder="Senha"> <br> 
+
+                        <button>Logar</button>
+                        
+                    </fieldset>
+                </form> 
+   
+            
+        <h2>Estruturas de um site</h2>
+
+            <p> Tag <strong>header</strong>: para parte superior da página. <br>
+                Tag <strong>footer</strong>: para parte inferior da página. <br>
+                Tag <strong>main</strong>: define o conteúdo específico de uma determinada pág da web. <br>
+                Tag <strong>section</strong>: define grupos de conteúdos de um único tema. <br>
+                Tag <strong>nav</strong>: define grupo de elementos que ajudam os usuários a sair da página atual, como por exemplo uma lista de mídias sociais. <br> 
+            </p>    
 
     </body>
 </html>
