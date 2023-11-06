@@ -1,18 +1,27 @@
 @charset "UTF-8";
 
+nav{
+    background-color:  #B8B8FF;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: hsla(58, 100%, 66%, 0.030) ;
+    background-color: #F8F7FF
    
 }
 h1 {
     color: #fff952 ;
     background-color: #232239;
+    width: 350px;
+    border-radius: 5px;
+    
    
 }
 h2 {
     color: #232239;
     background-color: #fff952;
+    border-radius: 5px;
+    width: 350px;
   
 }
 
