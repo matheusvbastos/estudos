@@ -1,31 +1,33 @@
 @charset "UTF-8";
 
+* { /* Configuração Global */
+}
+
 nav{
     background-color:  #B8B8FF;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #F8F7FF
-   
+    background-color: #f8f7ff;
+    background-image: linear-gradient(-190deg, #F8F7FF 70%, #B8B8FF);
+    background-attachment: fixed;  
 }
+
 h1 {
     color: #fff952 ;
     background-color: #232239;
     width: 350px;
     border-radius: 5px;
-    
-   
 }
+
 h2 {
     color: #232239;
     background-color: #fff952;
     border-radius: 5px;
     width: 350px;
-  
 }
 
 a{
-    color:  #232239;
-    
+    color:  #232239; 
 }
