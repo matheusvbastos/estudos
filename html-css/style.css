@@ -5,20 +5,30 @@
 
 nav{
     background-color:  #B8B8FF;
+    padding: 10px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f8f7ff;
-    background-image: linear-gradient(-190deg, #F8F7FF 70%, #B8B8FF);
+    background-image: linear-gradient(-190deg, #B8B8FF 70%, #9381FF);
     background-attachment: fixed;  
+}
+main{
+    background-color: white;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #23223950 ;
 }
 
 h1 {
     color: #fff952 ;
     background-color: #232239;
-    width: 350px;
     border-radius: 5px;
+    text-align: center;
+
 }
 
 h2 {
@@ -26,8 +36,14 @@ h2 {
     background-color: #fff952;
     border-radius: 5px;
     width: 350px;
+    text-shadow: 1px 1px 5px #23223950 ;
 }
 
 a{
     color:  #232239; 
 }
+
+p{
+    text-align: justify;
+}
+
