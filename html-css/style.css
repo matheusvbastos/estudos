@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 
 * { /* Configuração Global */
 }
@@ -9,7 +9,25 @@ nav{
 }
 
 body {
+    font-style: normal;
+    /*italico ou normal */
+
+    font-weight: normal; 
+    /* Tipos de peso: lighter, normal, bold, bolder 
+    Nem toda fonte tem variação de peso */
+   
+    font-size: 1em;
+    /* Utilizar sempre medidas em ou px
+        16px = 1em */
+
     font-family: Arial, Helvetica, sans-serif;
+    /* Safe fontes seria combinações de fontes parecidas para tentar que o navegador aplique elas na ordem. 
+        site w3c pode orientar melhor as combinações.
+    */
+    
+    font: normal normal 1em Arial;
+    /* shorthand font: font-style, font-weight, font-size, font-family */
+    
     background-color: #f8f7ff;
     background-image: linear-gradient(-190deg, #B8B8FF 70%, #9381FF);
     background-attachment: fixed;  
@@ -24,6 +42,7 @@ main{
 }
 
 h1 {
+
     color: #fff952 ;
     background-color: #232239;
     border-radius: 5px;
