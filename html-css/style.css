@@ -1,4 +1,19 @@
 @charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "avant";
+    src: url("fontes/ITCAvantGardeStdDemi.otf") format('opentype');
+/* Tipos de format() :
+
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- truetype-aat (apple advanced typography)
+- svg 
+Geralmente sempre são otf ou ttf
+*/
+}
 
 * { /* Configuração Global */
 }
@@ -20,12 +35,12 @@ body {
     /* Utilizar sempre medidas em ou px
         16px = 1em */
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /* Safe fontes seria combinações de fontes parecidas para tentar que o navegador aplique elas na ordem. 
         site w3c pode orientar melhor as combinações.
     */
     
-    font: normal normal 1em Arial;
+    font: normal normal 1em;
     /* shorthand font: font-style, font-weight, font-size, font-family */
     
     background-color: #f8f7ff;
@@ -42,7 +57,7 @@ main{
 }
 
 h1 {
-
+    font-family: "avant", Arial, sans-serif;
     color: #fff952 ;
     background-color: #232239;
     border-radius: 5px;
@@ -51,6 +66,7 @@ h1 {
 }
 
 h2 {
+    font-family: "avant", Arial, sans-serif;
     color: #232239;
     background-color: #fff952;
     border-radius: 5px;
