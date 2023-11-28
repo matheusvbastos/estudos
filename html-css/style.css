@@ -15,12 +15,10 @@ Geralmente sempre são otf ou ttf
 */
 }
 
-* { /* Configuração Global */
-}
-
 nav{
     background-color:  #B8B8FF;
     padding: 10px;
+    text-align: center;
 }
 
 body {
