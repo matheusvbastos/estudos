@@ -143,3 +143,16 @@ div:hover > p{
 div > p {
     display: none;
 }
+
+/* feito somente para visualização do DEV TOOLS do Chrome. Ótimo para visualizar o código e fazer alterações para testes sem alterar o código original.*/
+.inlinelevel{
+    border-width: 100px;
+    border-style: solid ;
+    border-color: #fff952;
+}
+
+.boxlevel{
+    border-style: solid;
+    border-color: black;
+
+}
